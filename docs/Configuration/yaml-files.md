@@ -160,6 +160,8 @@ To trigger software install, when policy fails, specify one of:
   - `install_software.hash_sha256` is [SHA256 hash](https://fleetdm.com/docs/configuration/yaml-files#hash) of a custom package.
   - `install_software.app_store_id` is the ID of the Apple App Store app or Google Play app.
 
+When `fleetctl gitops` validates these references, errors identify the containing fleet (for example, `not found on fleet`).
+
 ##### Run script
 
 _Available in Fleet Premium_
